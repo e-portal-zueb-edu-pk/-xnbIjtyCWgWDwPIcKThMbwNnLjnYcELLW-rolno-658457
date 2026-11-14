@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Candidate Card</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      min-height: 100vh;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background: #ffffff;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+    }
+
+    /* PHOTO SECTION - WHITE */
+
+    .photo-area {
+      width: 100%;
+      background: #ffffff;
+      padding: 20px 15px 25px;
+      text-align: center;
+    }
+
+    .photo-area img {
+      width: 240px;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border: 5px solid #ffffff;
+    }
+
+    /* INFORMATION SECTION - FULL BLACK */
+
+    .info {
+      width: 100%;
+      background: #000000;
+      color: #ffffff;
+      padding: 22px 18px 30px;
+      margin: 0;
+    }
+
+    /* CENTER ALIGNMENT */
+
+    .row {
+      display: grid;
+      grid-template-columns: 45% 55%;
+      align-items: center;
+      width: 100%;
+      gap: 5px;
+      padding: 17px 0;
+    }
+
+    .label {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    .value {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      text-align: center;
+      line-height: 1.3;
+      overflow-wrap: anywhere;
+    }
+
+    /* MOBILE RESPONSIVE */
+
+    @media (max-width: 600px) {
+
+      .photo-area {
+        padding: 15px 10px 20px;
+      }
+
+      .photo-area img {
+        width: 160px;
+        height: 210px;
+      }
+
+      .info {
+        width: 100%;
+        padding: 18px 12px 28px;
+      }
+
+      .row {
+        grid-template-columns: 45% 55%;
+        gap: 3px;
+        padding: 17px 0;
+      }
+
+      .label,
+      .value {
+        font-size: 14px;
+        line-height: 1.3;
+      }
+    }
+
+    /* SMALL MOBILE */
+
+    @media (max-width: 360px) {
+
+      .info {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      .row {
+        grid-template-columns: 44% 56%;
+      }
+
+      .label,
+      .value {
+        font-size: 13px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <!-- PHOTO SECTION -->
+
+    <div class="photo-area">
+      <img
+        src="IMG-20241230-WA0009.jpg"
+        alt="Candidate Image">
+    </div>
+
+    <!-- FULL WIDTH BLACK SECTION -->
+
+    <div class="info">
+
+      <div class="row">
+        <div class="label">ROLL NO:-</div>
+        <div class="value">658457</div>
+      </div>
+
+      <div class="row">
+        <div class="label">CANDIDATE'S NAME:</div>
+        <div class="value">MUHAMMAD ILYAS</div>
+      </div>
+
+      <div class="row">
+        <div class="label">FATHER'S NAME:</div>
+        <div class="value">MUHAMMAD IJAZ</div>
+      </div>
+
+      <div class="row">
+        <div class="label">NAME OF INSTITUTE:</div>
+        <div class="value">
+          IDEAL ENGLISH GRAMMAR HIGHER SEC SCHOOL
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">ENROLLMENT NO:</div>
+        <div class="value">
+          ZUEB/S.S.C/2024/136529
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">GROUP:</div>
+        <div class="value">PRIVATE SCIENCE</div>
+      </div>
+
+      <div class="row">
+        <div class="label">DATE OF BIRTH:</div>
+        <div class="value">01-OCT-1999</div>
+      </div>
+
+      <div class="row">
+        <div class="label">EXAM VENUE:</div>
+        <div class="value">
+          GOVT. BOYS SEC, SCHOOL NO.9 SECTOR 8-L ORANGI TOWN
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">VENUE ADDRESS:</div>
+        <div class="value">
+          SECTOR 8-L, ORANGI TOWN, KARACHI WEST, SINDH, PAKISTAN
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
